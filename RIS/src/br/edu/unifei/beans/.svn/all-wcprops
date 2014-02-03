@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans
+END
+ExameRadiologico.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/ExameRadiologico.hbm.xml
+END
+ExameRadiologicoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/ExameRadiologicoDao.java
+END
+Medico.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Medico.java
+END
+Clinica.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Clinica.java
+END
+EquipamentoRadiologico.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/EquipamentoRadiologico.java
+END
+MedicoClassificacao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoClassificacao.java
+END
+RegiaoExame.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/RegiaoExame.hbm.xml
+END
+RegiaoExameDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/RegiaoExameDao.java
+END
+ExameRadiologico.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/ExameRadiologico.java
+END
+Exame.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Exame.hbm.xml
+END
+ExameDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/ExameDao.java
+END
+MedicoResponsavelLaudoId.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoResponsavelLaudoId.java
+END
+Medico.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Medico.hbm.xml
+END
+MedicoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/MedicoDao.java
+END
+Clinica.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Clinica.hbm.xml
+END
+ClinicaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/ClinicaDao.java
+END
+Paciente.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Paciente.java
+END
+ClassificacaoMedico.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/ClassificacaoMedico.hbm.xml
+END
+ClassificacaoMedicoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/ClassificacaoMedicoDao.java
+END
+MedicoResponsavelLaudo.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoResponsavelLaudo.hbm.xml
+END
+MedicoResponsavelLaudoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/MedicoResponsavelLaudoDao.java
+END
+Exame.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Exame.java
+END
+ClassificacaoMedico.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/ClassificacaoMedico.java
+END
+MedicoResponsavelLaudo.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoResponsavelLaudo.java
+END
+Paciente.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/Paciente.hbm.xml
+END
+PacienteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/PacienteDao.java
+END
+MedicoClassificacaoId.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoClassificacaoId.java
+END
+RegiaoExame.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/RegiaoExame.java
+END
+EquipamentoRadiologico.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/EquipamentoRadiologico.hbm.xml
+END
+EquipamentoRadiologicoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/EquipamentoRadiologicoDao.java
+END
+ExameRadiologicoId.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/ExameRadiologicoId.java
+END
+MedicoClassificacao.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/60/trunk/RIS/src/br/edu/unifei/beans/MedicoClassificacao.hbm.xml
+END
+MedicoClassificacaoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/65/trunk/RIS/src/br/edu/unifei/beans/MedicoClassificacaoDao.java
+END

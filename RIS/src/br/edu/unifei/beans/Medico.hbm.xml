@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/10/2008 01:01:30 by Hibernate Tools 3.2.2.CR1 -->
+<hibernate-mapping>
+    <class name="br.edu.unifei.beans.Medico" table="medico" catalog="ris">
+        <id name="codMedico" type="java.lang.Integer">
+            <column name="COD_MEDICO" />
+            <generator class="identity" />
+        </id>
+        <property name="nomMedico" type="string">
+            <column name="NOM_MEDICO" length="50" />
+        </property>
+        <property name="sbnMedico" type="string">
+            <column name="SBN_MEDICO" length="30" />
+        </property>
+        <property name="numCrm" type="java.lang.Integer">
+            <column name="NUM_CRM" />
+        </property>
+        <property name="numUserBanco" type="java.lang.Integer">
+            <column name="NUM_USER_BANCO" />
+        </property>
+        <set name="medicoClassificacaos" inverse="true">
+            <key>
+                <column name="MEDICO_COD_MEDICO" />
+            </key>
+            <one-to-many class="br.edu.unifei.beans.MedicoClassificacao" />
+        </set>
+    </class>
+</hibernate-mapping>

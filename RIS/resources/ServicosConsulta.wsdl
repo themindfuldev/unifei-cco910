@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://servicos.unifei.edu.br" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://servicos.unifei.edu.br" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://servicos.unifei.edu.br">
+            <xs:element name="consultaCompleta">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="codRegiao" type="xs:int"/>
+                        <xs:element minOccurs="0" name="codExame" type="xs:int"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="palavrasChave" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="dataInicio" nillable="true" type="xs:dateTime"/>
+                        <xs:element minOccurs="0" name="dataFim" nillable="true" type="xs:dateTime"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaCompletaResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaExamesDePaciente">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="codPaciente" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaExamesDePacienteResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPacientes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPacientesResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPorDescricaoDoLaudo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="palavrasChave" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="dataInicio" nillable="true" type="xs:dateTime"/>
+                        <xs:element minOccurs="0" name="dataFim" nillable="true" type="xs:dateTime"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPorDescricaoDoLaudoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPorRegiaoAnatomicaEOuTipoDeExame">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="codRegiao" type="xs:int"/>
+                        <xs:element minOccurs="0" name="codExame" type="xs:int"/>
+                        <xs:element minOccurs="0" name="dataInicio" nillable="true" type="xs:dateTime"/>
+                        <xs:element minOccurs="0" name="dataFim" nillable="true" type="xs:dateTime"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="consultaPorRegiaoAnatomicaEOuTipoDeExameResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="consultaPacientesRequest">
+    <wsdl:part name="parameters" element="ns:consultaPacientes">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaExamesDePacienteRequest">
+    <wsdl:part name="parameters" element="ns:consultaExamesDePaciente">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaPorDescricaoDoLaudoRequest">
+    <wsdl:part name="parameters" element="ns:consultaPorDescricaoDoLaudo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaExamesDePacienteResponse">
+    <wsdl:part name="parameters" element="ns:consultaExamesDePacienteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaPorRegiaoAnatomicaEOuTipoDeExameRequest">
+    <wsdl:part name="parameters" element="ns:consultaPorRegiaoAnatomicaEOuTipoDeExame">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaCompletaResponse">
+    <wsdl:part name="parameters" element="ns:consultaCompletaResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaPorDescricaoDoLaudoResponse">
+    <wsdl:part name="parameters" element="ns:consultaPorDescricaoDoLaudoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaCompletaRequest">
+    <wsdl:part name="parameters" element="ns:consultaCompleta">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaPacientesResponse">
+    <wsdl:part name="parameters" element="ns:consultaPacientesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaPorRegiaoAnatomicaEOuTipoDeExameResponse">
+    <wsdl:part name="parameters" element="ns:consultaPorRegiaoAnatomicaEOuTipoDeExameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServicosConsultaPortType">
+    <wsdl:operation name="consultaCompleta">
+      <wsdl:input message="ns:consultaCompletaRequest" wsaw:Action="urn:consultaCompleta">
+    </wsdl:input>
+      <wsdl:output message="ns:consultaCompletaResponse" wsaw:Action="urn:consultaCompletaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorRegiaoAnatomicaEOuTipoDeExame">
+      <wsdl:input message="ns:consultaPorRegiaoAnatomicaEOuTipoDeExameRequest" wsaw:Action="urn:consultaPorRegiaoAnatomicaEOuTipoDeExame">
+    </wsdl:input>
+      <wsdl:output message="ns:consultaPorRegiaoAnatomicaEOuTipoDeExameResponse" wsaw:Action="urn:consultaPorRegiaoAnatomicaEOuTipoDeExameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorDescricaoDoLaudo">
+      <wsdl:input message="ns:consultaPorDescricaoDoLaudoRequest" wsaw:Action="urn:consultaPorDescricaoDoLaudo">
+    </wsdl:input>
+      <wsdl:output message="ns:consultaPorDescricaoDoLaudoResponse" wsaw:Action="urn:consultaPorDescricaoDoLaudoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaExamesDePaciente">
+      <wsdl:input message="ns:consultaExamesDePacienteRequest" wsaw:Action="urn:consultaExamesDePaciente">
+    </wsdl:input>
+      <wsdl:output message="ns:consultaExamesDePacienteResponse" wsaw:Action="urn:consultaExamesDePacienteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPacientes">
+      <wsdl:input message="ns:consultaPacientesRequest" wsaw:Action="urn:consultaPacientes">
+    </wsdl:input>
+      <wsdl:output message="ns:consultaPacientesResponse" wsaw:Action="urn:consultaPacientesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicosConsultaHttpBinding" type="ns:ServicosConsultaPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="consultaCompleta">
+      <http:operation location="ServicosConsulta/consultaCompleta"/>
+      <wsdl:input>
+        <mime:content part="consultaCompleta" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaCompleta" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorRegiaoAnatomicaEOuTipoDeExame">
+      <http:operation location="ServicosConsulta/consultaPorRegiaoAnatomicaEOuTipoDeExame"/>
+      <wsdl:input>
+        <mime:content part="consultaPorRegiaoAnatomicaEOuTipoDeExame" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaPorRegiaoAnatomicaEOuTipoDeExame" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorDescricaoDoLaudo">
+      <http:operation location="ServicosConsulta/consultaPorDescricaoDoLaudo"/>
+      <wsdl:input>
+        <mime:content part="consultaPorDescricaoDoLaudo" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaPorDescricaoDoLaudo" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaExamesDePaciente">
+      <http:operation location="ServicosConsulta/consultaExamesDePaciente"/>
+      <wsdl:input>
+        <mime:content part="consultaExamesDePaciente" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaExamesDePaciente" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPacientes">
+      <http:operation location="ServicosConsulta/consultaPacientes"/>
+      <wsdl:input>
+        <mime:content part="consultaPacientes" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaPacientes" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicosConsultaSoap12Binding" type="ns:ServicosConsultaPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="consultaCompleta">
+      <soap12:operation soapAction="urn:consultaCompleta" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorRegiaoAnatomicaEOuTipoDeExame">
+      <soap12:operation soapAction="urn:consultaPorRegiaoAnatomicaEOuTipoDeExame" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorDescricaoDoLaudo">
+      <soap12:operation soapAction="urn:consultaPorDescricaoDoLaudo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaExamesDePaciente">
+      <soap12:operation soapAction="urn:consultaExamesDePaciente" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPacientes">
+      <soap12:operation soapAction="urn:consultaPacientes" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicosConsultaSoap11Binding" type="ns:ServicosConsultaPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="consultaCompleta">
+      <soap:operation soapAction="urn:consultaCompleta" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorRegiaoAnatomicaEOuTipoDeExame">
+      <soap:operation soapAction="urn:consultaPorRegiaoAnatomicaEOuTipoDeExame" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPorDescricaoDoLaudo">
+      <soap:operation soapAction="urn:consultaPorDescricaoDoLaudo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaExamesDePaciente">
+      <soap:operation soapAction="urn:consultaExamesDePaciente" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaPacientes">
+      <soap:operation soapAction="urn:consultaPacientes" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicosConsulta">
+    <wsdl:port name="ServicosConsultaHttpSoap12Endpoint" binding="ns:ServicosConsultaSoap12Binding">
+      <soap12:address location="http://localhost:8080/axis2/services/ServicosConsulta"/>
+    </wsdl:port>
+    <wsdl:port name="ServicosConsultaHttpEndpoint" binding="ns:ServicosConsultaHttpBinding">
+      <http:address location="http://localhost:8080/axis2/services/ServicosConsulta"/>
+    </wsdl:port>
+    <wsdl:port name="ServicosConsultaHttpSoap11Endpoint" binding="ns:ServicosConsultaSoap11Binding">
+      <soap:address location="http://localhost:8080/axis2/services/ServicosConsulta"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

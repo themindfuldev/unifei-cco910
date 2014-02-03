@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/10/2008 01:01:30 by Hibernate Tools 3.2.2.CR1 -->
+<hibernate-mapping>
+    <class name="br.edu.unifei.beans.Exame" table="exame" catalog="ris">
+        <id name="codExame" type="java.lang.Integer">
+            <column name="COD_EXAME" />
+            <generator class="identity" />
+        </id>
+        <property name="nomExame" type="string">
+            <column name="NOM_EXAME" length="50" />
+        </property>
+        <set name="exameRadiologicos" inverse="true">
+            <key>
+                <column name="EXAME_COD_EXAME" />
+            </key>
+            <one-to-many class="br.edu.unifei.beans.ExameRadiologico" />
+        </set>
+    </class>
+</hibernate-mapping>

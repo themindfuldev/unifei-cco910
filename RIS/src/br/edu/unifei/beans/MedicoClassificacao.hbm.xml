@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/10/2008 01:01:30 by Hibernate Tools 3.2.2.CR1 -->
+<hibernate-mapping>
+    <class name="br.edu.unifei.beans.MedicoClassificacao" table="medico_classificacao" catalog="ris">
+        <composite-id name="id" class="br.edu.unifei.beans.MedicoClassificacaoId">
+            <key-property name="codMedico" type="int">
+                <column name="COD_MEDICO" />
+            </key-property>
+            <key-property name="codClassificacao" type="int">
+                <column name="COD_CLASSIFICACAO" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="classificacaoMedico" class="br.edu.unifei.beans.ClassificacaoMedico" fetch="select">
+            <column name="CLASSIFICACAO_MEDICO_COD_CLASSIFICACAO" />
+        </many-to-one>
+        <many-to-one name="medico" class="br.edu.unifei.beans.Medico" fetch="select">
+            <column name="MEDICO_COD_MEDICO" />
+        </many-to-one>
+        <property name="idfAtivo" type="string">
+            <column name="IDF_ATIVO" length="1" />
+        </property>
+        <set name="medicoResponsavelLaudos" inverse="true">
+            <key>
+                <column name="MEDICO_CLASSIFICACAO_COD_MEDICO" not-null="true" />
+                <column name="MEDICO_CLASSIFICACAO_COD_CLASSIFICACAO" not-null="true" />
+            </key>
+            <one-to-many class="br.edu.unifei.beans.MedicoResponsavelLaudo" />
+        </set>
+    </class>
+</hibernate-mapping>

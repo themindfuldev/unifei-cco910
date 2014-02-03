@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="ris" match-name="classificacao_medico"/>
+  <table-filter match-catalog="ris" match-name="clinica"/>
+  <table-filter match-catalog="ris" match-name="equipamento_radiologico"/>
+  <table-filter match-catalog="ris" match-name="exame"/>
+  <table-filter match-catalog="ris" match-name="exame_radiologico"/>
+  <table-filter match-catalog="ris" match-name="medico"/>
+  <table-filter match-catalog="ris" match-name="medico_classificacao"/>
+  <table-filter match-catalog="ris" match-name="medico_responsavel_laudo"/>
+  <table-filter match-catalog="ris" match-name="paciente"/>
+  <table-filter match-catalog="ris" match-name="regiao_exame"/>
+</hibernate-reverse-engineering>

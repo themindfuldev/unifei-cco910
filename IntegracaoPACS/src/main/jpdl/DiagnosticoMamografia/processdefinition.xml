@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns="urn:jbpm.org:jpdl-3.2"  name="DiagnosticoMamografia">
+
+
+	<start-state name="inicio">
+		<transition to="Delegação das buscas" name="Requisição de diagnóstico para mamografia"></transition>
+	</start-state>
+
+
+	<state name="buscandoHIS">
+		<transition to="Conclusão das buscas" name="Conclusão da busca HIS">
+			<action class="br.edu.unifei.BuscaHISActionHandler"></action>
+		</transition>
+	</state>
+
+	<fork name="Delegação das buscas">
+		<transition to="buscandoHIS" name="Busca em BD relacional"></transition>
+		<transition to="buscandoRIS" name="Busca em dispositivos radiológicos"></transition>
+	</fork>
+
+	<state name="buscandoRIS">
+		<transition to="Conclusão das buscas" name="Conclusão da busca RIS">
+			<action class="br.edu.unifei.BuscaRISActionHandler"></action>
+		</transition>
+	</state>
+
+	<join name="Conclusão das buscas">
+		<transition to="construindoDiagnostico" name="Junção dos resultados das buscas">
+			<action class="br.edu.unifei.JuncaoDiagnosticoActionHandler"></action>
+		</transition>
+	</join>
+
+	<state name="construindoDiagnostico">
+		<transition to="fim" name="Retorno do diagnóstico para mamografia"></transition>
+	</state>
+
+
+	<end-state name="fim"></end-state>
+
+
+</process-definition>

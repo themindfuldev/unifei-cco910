@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib
+END
+mysql-connector-java-3.1.14-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/mysql-connector-java-3.1.14-bin.jar
+END
+axiom-api-1.2.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/84/trunk/SI/WebContent/WEB-INF/lib/axiom-api-1.2.7.jar
+END
+axis2-adb-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/84/trunk/SI/WebContent/WEB-INF/lib/axis2-adb-1.4.1.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/jstl.jar
+END
+commons-fileupload-1.2.1-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/commons-fileupload-1.2.1-javadoc.jar
+END
+axiom-impl-1.2.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/84/trunk/SI/WebContent/WEB-INF/lib/axiom-impl-1.2.7.jar
+END
+commons-io-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/commons-io-1.4.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/71/trunk/SI/WebContent/WEB-INF/lib/standard.jar
+END
+axis2-kernel-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/84/trunk/SI/WebContent/WEB-INF/lib/axis2-kernel-1.4.1.jar
+END

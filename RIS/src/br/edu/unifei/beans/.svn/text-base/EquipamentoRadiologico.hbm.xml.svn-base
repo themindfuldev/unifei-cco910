@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/10/2008 01:01:30 by Hibernate Tools 3.2.2.CR1 -->
+<hibernate-mapping>
+    <class name="br.edu.unifei.beans.EquipamentoRadiologico" table="equipamento_radiologico" catalog="ris">
+        <id name="codEquipamento" type="java.lang.Integer">
+            <column name="COD_EQUIPAMENTO" />
+            <generator class="identity" />
+        </id>
+        <property name="nomEquipamento" type="string">
+            <column name="NOM_EQUIPAMENTO" length="40" />
+        </property>
+        <property name="numSala" type="string">
+            <column name="NUM_SALA" length="5" />
+        </property>
+        <property name="numCorredor" type="string">
+            <column name="NUM_CORREDOR" length="5" />
+        </property>
+        <property name="dscMarca" type="string">
+            <column name="DSC_MARCA" length="40" />
+        </property>
+        <property name="codEquipamentoProdesp" type="string">
+            <column name="COD_EQUIPAMENTO_PRODESP" length="4" />
+        </property>
+        <set name="exameRadiologicos" inverse="true">
+            <key>
+                <column name="EQUIPAMENTO_RADIOLOGICO_COD_EQUIPAMENTO" />
+            </key>
+            <one-to-many class="br.edu.unifei.beans.ExameRadiologico" />
+        </set>
+    </class>
+</hibernate-mapping>

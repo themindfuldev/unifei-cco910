@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ris</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="java.naming.factory.initial">0</property>
+        
+        <mapping resource="br/edu/unifei/beans/RegiaoExame.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/MedicoResponsavelLaudo.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/Exame.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/MedicoClassificacao.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/Clinica.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/Medico.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/ClassificacaoMedico.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/EquipamentoRadiologico.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/Paciente.hbm.xml" />
+        <mapping resource="br/edu/unifei/beans/ExameRadiologico.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
